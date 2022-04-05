@@ -5,5 +5,11 @@ tasks:
     dnf: 
       name: tree
       state: latest
+  - name: subir servicio de apache
+    systemd:
+      name: httpd
+      state : started
+      
+    
 
 ...
